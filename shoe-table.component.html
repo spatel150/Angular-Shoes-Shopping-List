@@ -1,0 +1,52 @@
+<div class="card">
+  <div class="card-header">
+    {{pageTitle}}
+  </div>
+</div>
+<div class="card-body">
+  <div class="row">
+    <div class="col-md-2">Filter Products: </div>
+    <div class="col-md-4">
+      <input type="text"
+        [(ngModel)]="listFilter" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Organized by: {{listFilter}} </h4>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table"
+      *ngIf="shoes && shoes.length">
+      <thead>
+        <tr>
+          <th>
+            <button class="btn btn-primary"
+              (click)="toggleImage()">
+              {{showImage ? "Hide" : "List"}} Shoes
+            </button>
+          </th>
+          <th>Shoe</th>
+          <th>Code</th>
+          <th>Availablity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let shoe of filteredShoes">
+          <td><img *ngIf="showImage"
+                [src]="shoe.imageUrl"
+                [title]="shoe.productName"
+                [style.width.px]="imageWidth"
+                [style.margin.px]="imageMargin">
+          </td>
+          <td>{{ shoe.shoeName }}</td>
+          <td>{{ shoe.shoeCode |convertToSpaces: "-" }}</td>
+          <td>{{ shoe.releaseDate }}</td>
+          <td>{{ shoe.price | currency:'USD':'symbol':'1.2-2' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

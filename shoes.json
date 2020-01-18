@@ -1,0 +1,47 @@
+[
+  {
+    "shoeId": 1,
+    "shoeName": "Yeezy-950",
+    "shoeCode": "YYY-248",
+    "releaseDate": "Decemeber 18, 2019",
+    "description": "Expensive",
+    "price": 850.00,
+    "imageUrl": "assets/images/Yeezy-950-Chocolat"
+  },
+  {
+    "shoeId": 2,
+    "shoeName": "Yeezy-350",
+    "shoeCode": "YYY-346",
+    "releaseDate": "December 20, 2019",
+    "description": "Perfect shoe for anyone",
+    "price": 800.00,
+    "imageUrl": "assets/images/Yeezy-350-Pirate-Black.jpg"
+  },
+  {
+    "shoeId": 3,
+    "shoeName": "Yeezy-750",
+    "shoeCode": "YYY-448",
+    "releaseDate": "December 21, 2019",
+    "description": "Look at thos kicks",
+    "price": 1000.00,
+    "imageUrl": "assets/images/Yeezy-750-Shoes.jpg"
+  },
+  {
+    "shoeId": 4,
+    "shoeName": "Nike-AirMax",
+    "shoeCode": "NKE-239",
+    "releaseDate": "December 22, 2019",
+    "description": "Great running shoes",
+    "price": 75.00,
+    "imageUrl": "assets/images/Nike-AirMax-Grey.jpg"
+  },
+  {
+    "shoeId": 5,
+    "shoeName": "Nike-Air-Grey",
+    "shoeCode": "NKE-358",
+    "releaseDate": "December 23, 2019",
+    "description": "Just in time for Chrsitmas",
+    "price": 80.00,
+    "imageUrl": "assets/images/Nike-Air-Grey.png"
+  }
+]
